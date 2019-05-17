@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sonny and the Sunsets</title>
+
+		<link rel="stylesheet" type="text/css" href="css/sonny.css"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+
+
+			<img src="imgs/SonnyHeader.png"/>
+
+		 </div>
+
+		<nav class="mainNav" id="responsiveNav">
+			<a href="#">about</a>
+			<a href="#">news</a>
+			<a href="#">tour</a>
+			<a href="#">music</a>
+			<a href="#">video</a>
+			<a href="#">photos</a>
+			<a href="#">store</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</nav>
+
+
+
+<!-- Slide Show -->
+<section>
+  <img class="slideshow1" src="imgs/pic9.png">
+  <img class="slideshow1" src="imgs/pic14.png">
+  <img class="slideshow1" src="imgs/pic1.png">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshow1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+		
+	<div class="container2">
+
+		<h1><img src="imgs/about_sonny.png" class="image2"> </h1>
+
+
+		<p align=right; style="font-size:2vw"> Sonny & the Sunsets are a beautiful West Coast thing. Birthed from the sand, the surf, and twilight campfires down in Ocean Beach, Sonny & the Sunsets' busted beach-pop songs spark recollections of doo wop's otherworldly despair, a dose of goofball humor from the Michael Hurley school, and positive possibilities exuded by Jonathan Richman. </p>
+
+		<p align=right; style="font-size:2vw"> Helmed by the singer/songwriter, playwright, author and onetime troubadour, Sonny Smith, The Sunsets have featured a revolving door lineup that have included Shayde Sartin, Ryan Browne, Kelley Stolz and Tahlia Harbour. Adopting a range of sounds, Smith's sardonic, laid-back style is interwoven throughout his compelling songwriting and vocals. </p>
+
+
+
+	
+
+	</div>
+
+
+
+
+  	<div class="container">
+
+  		<h1><img src="imgs/news_label.png" class="image2"> </h1>
+  
+     	 <img src="imgs/news_sonny.png" class="image1">
+
+    </div>
+
+
+
+
+<main>
+
+			<div id="Music">
+				<p>Music</p>
+			</div>
+			<article class="column1">
+			</article>
+			<article class="column2">
+				<p>Album 2</p>
+			</article>
+			<article class="column3">
+				<p>Album 3</p>
+			</article>
+			<article class="column1">
+			</article>
+			<article class="column2">
+				<p>Album 5</p>
+			</article>
+			<article class="column3">
+				<p>Album 6</p>
+			</article>		
+			
+		</main>
+	
+
+
+
+
+
+
+
+
+		<footer>
+			<p>&copy; Copyright 2019</p>
+		</footer>
+
+
+
+
+
+
+	<script>
+		function myFunction() {
+
+		var x = document.getElementById("responsiveNav");
+		
+		if (x.className === "mainNav") {
+			x.className += " responsive";
+		} else {
+
+			x.className = "mainNav";
+		}
+		}
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

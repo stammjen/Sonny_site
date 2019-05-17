@@ -1,0 +1,183 @@
+* {
+	font-family: courier;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../imgs/pic10_web.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+body, html {
+  height: 100%%;
+}
+
+
+
+/** LAYOUT **/
+
+main {
+	overflow: auto;
+}
+
+#feature, footer {
+	margin: 1%;
+}
+			
+.column1, .column2, .column3 {
+	width: 48%;
+	float: left;
+	margin: 1%;
+	padding: 1%;
+	
+}
+
+.column1{
+	
+}
+
+.column3{
+	margin-right: 0%;
+}
+	
+
+footer {
+	background-color: #efefef;
+	padding: 10px 0;
+}
+
+#feature, article {
+	height: 250px;
+	margin-bottom: 1%;
+	background-color: orange;
+}
+
+
+/** NAVIGATON **/
+
+	.mainNav {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	text-align: center;
+	margin: 0;
+	border: solid black 3px;
+
+	}
+
+	.mainNav a {
+	font-size: 30px;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+
+	}
+
+	.mainNav a:hover {
+	background-color: tomato;
+	color: white;
+
+}
+	
+.mainNav .icon {
+	display: none;
+
+}
+
+/** Navigation MEDIA QUERY **/
+
+@media screen and (max-width: 600px) {
+	.mainNav a {display: none;}
+	.mainNav a.icon{display: block; float: right;}
+	.mainNav { border: none; }
+
+}
+
+@media screen and (max-width: 600px) {
+	.mainNav.responsive {position: relative;}
+	.mainNav.responsive .icon {position: absolute;
+		top: 0;
+		right: 0;}
+
+	.mainNav.responsive a {
+		display: block;
+		text-align: center;
+	}
+
+}
+
+/*Headers*/
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.container1 {
+	width: 10%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.container2 {
+	width: 100%;
+	height: 666px;
+	margin: 0 auto;
+	background-image: url("../imgs/aboutmepage.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/*images*/
+
+
+.image1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: none;
+}
+
+.image2 {
+	display: block;
+	width: 10%;
+	margin: auto;text-align: 
+
+}
+
+.slideshow1{
+	display:block;
+	width: 50%;
+	margin:auto;
+	border: solid black 3px;
+
+}
+
+p{ 
+	width: 50%;
+	text-align: right;
+	position; right
+	font-size: 12px;
+
+	}
+
+
+/** PARALLAX **/
+
+.parallax { 
+  background-image: url("../imgs/pic6.png");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:36px
+}
+
+
+
